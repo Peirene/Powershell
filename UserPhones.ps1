@@ -1,0 +1,1 @@
+﻿Get-aduser  -ldapfilter "(telephonenumber=*)" -Property * |Select givenname,sn,name,title,department,description,company,ipphone,telephonenumber | export-csv C:\users\diana.sefkow\Desktop\users.csv -NoTypeInformation -Encoding UTF8
